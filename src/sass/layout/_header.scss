@@ -9,7 +9,44 @@
 
 .header__container {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
+.btn-mob-menu {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &__icon {
+        fill: var(--accent-cl);
+    }
+
+    &__cross {
+        fill: var(--white-cl);
+    }
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E17992;
+    z-index: 100;
+    transform: translateX(100%);
+}
+
+.mob-menu.is-open {
+    transform: translateX(0);
+}
 
  /*#endregion*/

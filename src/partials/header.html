@@ -1,15 +1,36 @@
 <header class="header">
   <div class="container header__container">
-    <a href="">
-      <img src="./images/logo-icecream.png" alt="" />
+    <a href="" alt="logo website icecreame">
+      <img src="./images/logo-icecream.png" alt="logo" />
     </a>
-    <button class="btn-mob-menu" type="button"></button>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+
+    <button
+      class="btn-mob-menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
+      <svg class="btn-mob-menu__icon" width="30" height="30">
+        <use href="./images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mob-menu js-menu-container" id="mobile-menu">
+    <button class="btn-mob-menu js-close-menu">
+      <svg class="btn-mob-menu__cross" width="30" height="30">
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <button class="btn btn--mode-light" type="button">Buy now</button>
+    <ul class="list">
+      <li class="link">Home</li>
+      <li class="link">About us</li>
+      <li class="link">How it&#180;s made?</li>
+      <li class="link">Our products</li>
+      <li class="link">Contact</li>
     </ul>
   </div>
+
+  <script src="./index.js"></script>
 </header>
