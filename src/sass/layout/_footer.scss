@@ -1,3 +1,84 @@
-/*#region 7 Reviews */
+.footer {
+  background: #fff5f6;
+}
 
- /*#endregion*/
+.footer__text {
+  font-family: var(--title-font);
+  @include fonts(400, 18px, 21px, 0.04em);
+  text-transform: uppercase;
+  color: var(--pink-cl);
+  text-align: left;
+  width: 232px;
+  margin-bottom: 16px;
+}
+.footer__tagline {
+  font-family: var(--title-font);
+  @include fonts(400, 34px, 39px, 0.04em);
+  text-transform: uppercase;
+  color: var(--accent-cl);
+  text-align: left;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.accession__social {
+  margin-bottom: 40px;
+}
+
+.accession__team-icons:not(:last-child) {
+  margin-right: 30px;
+}
+
+.accession__social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.accession__social-link {
+  @include centeredFlex(flex);
+  color: var(--pink-cl);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+
+  transition: background-color var(--transition-timing-function),
+    color var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    color: #2196f3;
+  }
+}
+
+.accession__icons {
+  fill: #ffffff;
+}
+
+.footer__phone-text {
+  @include fonts(700, 12px, 18px, 0.04em);
+  color: var(--black-cl);
+}
+
+.footer__phone {
+  @include fonts(700, 12px, 21px, 0.04em);
+
+  text-align: right;
+
+  color: var(--accent-cl);
+}
+
+.footer__info {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 16px;
+}
+
+.footer_box-safety {
+  text-align: center;
+}
+.footer__safety {
+  @include fonts(700, 14px, 21px, 0.04em);
+
+  color: var(--about-cl);
+}

@@ -55,22 +55,3 @@
         }
     }
 }
-
-.sub-title {
-    margin-bottom: 15px;
-
-    color: var(--pink-cl);
-
-    font-family: var(--title-font);
-    @include fonts(400, 18px, 21px, null, uppercase);
-    text-align: center;
-}
-
-.section-title {
-    color: var(--accent-cl);
-
-    font-family: var(--title-font);
-    @include fonts(400, 34px, 39px, 0.04em, uppercase);
-    text-align: center;
-}
-

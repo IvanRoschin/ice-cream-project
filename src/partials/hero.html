@@ -7,13 +7,32 @@
     </h1>
     <ul class="hero__list list">
       <li class="hero__item">
-        <a href="" class="hero__link hero__link--dark-mode link">Products</a>
+        <a href="#products" class="hero__link hero__link--dark-mode"
+          >Products</a
+        >
       </li>
-      <li class="hero__item">
-        <a href="" class="hero__link hero__link--light-mode link">
+      <li class="hero__item hero__item">
+        <a href="#how" class="hero__link hero__link--light-mode link">
           How it’s made?</a
         >
       </li>
     </ul>
+    <div class="ellipse hero__ellipse"></div>
+    <picture>
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ../src/images/hero-img/ice-cream_sm.png    1x,
+          ../src/images/hero-img/ice-cream_sm@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="hero__img hero__img-ice-cream"
+        src="../src/images/hero-img/ice-cream_sm.png"
+        alt="ice-cream"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>

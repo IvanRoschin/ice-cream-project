@@ -371,12 +371,22 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+<<<<<<< HEAD
+=======
+    padding-left: 32px;
+    padding-right: 32px;
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+<<<<<<< HEAD
+=======
+    padding-left: 16px;
+    padding-right: 16px;
+>>>>>>> main
   }
 }
 
@@ -385,6 +395,7 @@ img {
   padding-bottom: 60px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 100px;
@@ -399,6 +410,8 @@ img {
   }
 }
 
+=======
+>>>>>>> main
 /*Сетка для коллекции*/
 .grid {
   display: -webkit-box;
@@ -423,14 +436,21 @@ img {
   min-width: 167px;
   padding: 10px;
   border-radius: 22px;
+<<<<<<< HEAD
   border: 0;
+=======
+  border: none;
+>>>>>>> main
   cursor: pointer;
 }
 
 .btn--mode-light {
   color: var(--btn-accent-cl);
   background-color: var(--white-cl);
+<<<<<<< HEAD
   border: 1px solid var(--btn-accent-cl);
+=======
+>>>>>>> main
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
@@ -451,6 +471,7 @@ img {
 }
 
 /*#region 1 header*/
+<<<<<<< HEAD
 .header {
   padding-top: 8px;
   background-color: var(--pink-bg-cl);
@@ -524,6 +545,20 @@ img {
   .hero {
     background-image: url(../images/hero-img/ice-cream_sm@2x.png), url(../images/hero-img/ellipse_sm@2x.png);
   }
+=======
+/*#endregion*/
+.hero {
+  background-color: var(--pink-bg-cl);
+  overflow: hidden;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+  min-width: 218px;
+  padding-top: 134px;
+  padding-bottom: 98px;
+>>>>>>> main
 }
 
 .hero__tagline {
@@ -553,6 +588,7 @@ img {
 }
 
 .hero__item {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,6 +598,22 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  border-radius: 20px;
+  border: none;
+  background-color: var(--accent-cl);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero__item--mod {
+  background-color: #fff;
+>>>>>>> main
 }
 
 .hero__item:not(:last-child) {
@@ -570,6 +622,7 @@ img {
 
 .hero__link {
   display: block;
+<<<<<<< HEAD
   padding: 7px 12px;
   border-radius: 20px;
   font-size: 8px;
@@ -578,18 +631,30 @@ img {
 
 .hero__link--dark-mode {
   background-color: var(--accent-cl);
+=======
+  font-size: 8px;
+  line-height: 1.25;
+  padding: 7px 15px;
+}
+
+.hero__link--dark-mode {
+>>>>>>> main
   color: var(--white-cl);
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .hero__link--light-mode {
+<<<<<<< HEAD
   background-color: var(--white-cl);
+=======
+>>>>>>> main
   color: var(--accent-cl);
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
+<<<<<<< HEAD
 .hero__link--dark-mode:hover,
 .hero__link--dark-mode:focus {
   background-color: #ecebeb;
@@ -598,6 +663,27 @@ img {
 .hero__link--light-mode:hover,
 .hero__link--light-mode:focus {
   background-color: #ecebeb;
+=======
+.ellipse {
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+
+.hero__ellipse {
+  position: absolute;
+  z-index: -10;
+  top: 23px;
+  left: 36px;
+}
+
+.hero__img {
+  position: absolute;
+  z-index: -1;
+  top: 33px;
+  left: 117px;
+>>>>>>> main
 }
 
 /*#region 3 Products */
@@ -628,6 +714,10 @@ img {
 
 .product__title {
   font-family: var(--title-font);
+<<<<<<< HEAD
+=======
+  font-style: normal;
+>>>>>>> main
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -638,6 +728,15 @@ img {
   margin-bottom: 8px;
 }
 
+<<<<<<< HEAD
+=======
+/*.list {
+}
+.products__list {
+}
+.item {
+}*/
+>>>>>>> main
 .products__item {
   position: relative;
   margin-top: 140px;
@@ -706,11 +805,20 @@ img {
 
 .product-name {
   font-family: var(--title-font);
+<<<<<<< HEAD
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-align: center;
+=======
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+>>>>>>> main
   text-transform: uppercase;
   color: var(--white-cl);
   margin-top: 160px;
@@ -718,16 +826,25 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+>>>>>>> main
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> main
 }
 
 .product-name::after {
@@ -741,11 +858,20 @@ img {
 }
 
 .product-description {
+<<<<<<< HEAD
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+=======
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+>>>>>>> main
   color: var(--white-cl);
   margin-bottom: 32px;
   max-width: 200px;
@@ -776,6 +902,7 @@ img {
 /*#endregion*/
 .about {
   background-color: var(--light-pink-bg-cl);
+<<<<<<< HEAD
   background-repeat: no-repeat;
   background-position: 50% 550px;
   background-image: url(../images/about/about-bg_sm.png);
@@ -785,6 +912,8 @@ img {
   .about {
     background-image: url(../images/about/about-bg_sm@2x.png);
   }
+=======
+>>>>>>> main
 }
 
 .about__title {
@@ -792,9 +921,28 @@ img {
 }
 
 .about__thumb {
+<<<<<<< HEAD
   margin-bottom: 40px;
 }
 
+=======
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about__img {
+  position: absolute;
+  top: 395px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about__img {
+    display: none;
+  }
+}
+
+>>>>>>> main
 .about__list {
   margin-bottom: 15px;
 }
@@ -809,7 +957,11 @@ img {
 
 .about__item:first-child {
   color: var(--black-cl);
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  margin-bottom: 25px;
+>>>>>>> main
 }
 
 .about__item:last-child {
@@ -817,18 +969,36 @@ img {
 }
 
 .about__btn {
+<<<<<<< HEAD
   padding: 13px 37px;
   min-width: 176px;
   border-radius: 22px;
   border: none;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 37px;
+  min-width: 176px;
+  border-radius: 22px;
+>>>>>>> main
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .about__btn__btn:hover, .about__btn__btn:focus {
   background-color: #ECEBEB;
+=======
+.about__icon {
+  fill: currentColor;
+  margin-left: 14px;
+>>>>>>> main
 }
 
 .sub-title {
@@ -878,12 +1048,15 @@ img {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .contacts__item {
     --items: 3;
   }
 }
 
+=======
+>>>>>>> main
 .contacts__item:last-child {
   margin-bottom: 32px;
 }
@@ -1019,12 +1192,15 @@ img {
           flex-direction: column;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .group-buttons__item {
     --items: 2;
   }
 }
 
+=======
+>>>>>>> main
 .group-buttons__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -1033,10 +1209,13 @@ img {
   fill: transparent;
 }
 
+<<<<<<< HEAD
 .group-buttons__btn {
   height: 44px;
 }
 
+=======
+>>>>>>> main
 /* Modalka */
 .backdrop {
   position: fixed;
@@ -1064,7 +1243,11 @@ img {
 .modal {
   position: relative;
   width: 90%;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.2);
+=======
+  background-color: gray;
+>>>>>>> main
   -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function);
