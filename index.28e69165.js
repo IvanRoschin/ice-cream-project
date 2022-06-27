@@ -1,2 +1,0 @@
-new Swiper(".reviews__slider",{pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0,dynamicMainBullets:1},touchRatio:2,grabCursor:!0,spaceBetween:20,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},loop:!0,autoplay:{delay:2e3,pauseOnMouseEnter:!0,disableOnInteraction:!1},speed:700,effect:"coverflow",coverflowEffect:{rotate:30,slideShadows:!1}});
-//# sourceMappingURL=index.28e69165.js.map
