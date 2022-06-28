@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector("[data-milkshakes-open]"),closeModalBtn:document.querySelector("[data-milkshakes-close]"),modalcontact:document.querySelector("[data-milkshakes]"),divcontact:document.querySelector("[data-milkshakes-product]")};function t(){e.modalcontact.classList.toggle("is-hidden"),e.divcontact.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.22bbfba1.js.map

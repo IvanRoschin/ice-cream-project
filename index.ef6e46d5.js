@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector("[data-coffee-open]"),closeModalBtn:document.querySelector("[data-coffee-close]"),modalcontact:document.querySelector("[data-coffee]"),divcontact:document.querySelector("[data-coffee-product]")};function t(){e.modalcontact.classList.toggle("is-hidden"),e.divcontact.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.ef6e46d5.js.map
