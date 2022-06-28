@@ -67,7 +67,7 @@
   
     $lh-value: $lh-no-units / $fs-no-units;
   
-    $line-height: decimal-round($lh-value, 2);
+    $line-height: decimal-round($lh-value,2);
   
     @return $line-height;
   }

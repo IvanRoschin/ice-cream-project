@@ -7,12 +7,35 @@
     </a>
 
     <!-- mobile-menu -->
-    <button class="menu-button burger__btn" aria-expanded="false" aria-controls="mobile-menu" type="button"
-      data-menu-open>
-      <svg class="burger" width="20" height="20" aria-label="Переключатель мобильного меню">
-        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
+    <div class="block-menu">
+      <button
+        class="menu-button burger__btn"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+        data-menu-open
+      >
+        <svg
+          class="burger"
+          width="20"
+          height="20"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <button
+        class="buy__btn btn btn--mode-light"
+        type="button"
+        data-modal-open
+      >
+        Buy now
+        <svg class="narrow" aria-label="narrow-right" width="10" height="12">
+          <use href="./images/sprite.svg#narrow-right-red"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <div class="mobile-menu is-closed" id="mobile-menu" data-menu>
@@ -23,7 +46,12 @@
         </svg>
       </button>
 
-      <button class="mobile-menu__btn btn btn--mode-light" type="button" data-modal-open>Buy now
+      <button
+        class="mobile-menu__btn btn btn--mode-light"
+        type="button"
+        data-modal-open
+      >
+        Buy now
         <svg class="narrow" aria-label="narrow-right" width="10" height="12">
           <use href="./images/sprite.svg#narrow-right-red"></use>
         </svg>
@@ -37,10 +65,14 @@
           <a href="" class="mobile-menu__link link" href="#how">About us</a>
         </li>
         <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link link" href="#team">How it&#180;s made?</a>
+          <a href="" class="mobile-menu__link link" href="#team"
+            >How it&#180;s made?</a
+          >
         </li>
         <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link link" href="#contact">Our products</a>
+          <a href="" class="mobile-menu__link link" href="#contact"
+            >Our products</a
+          >
         </li>
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link link" href="#contact">Contact</a>
@@ -50,5 +82,4 @@
   </div>
 
   <!-- <include src="buy-now-modal.html"></include> -->
-
 </header>

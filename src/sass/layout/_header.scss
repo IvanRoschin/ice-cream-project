@@ -4,15 +4,23 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    background-color: rgba(255, 184, 202, 0.9);
+    // background-color: rgba(255, 184, 202, 0.3);
+    @include mq(tablet) {
+        padding-top: 32px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 37px;
+    }
 }
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    
 }
+
 
 .menu-button {
     padding: 0px;
@@ -27,15 +35,24 @@
         color: #ffffff;
     }
 
-    @include mq(tablet) {
+    @include mq(desktop) {
         display: none;
     }
 }
 
 .burger__btn {
     color: var(--accent-cl);
+
+    
 }
 
 .burger {
     fill: currentColor;
+}
+
+.block-menu {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 32px;
 }

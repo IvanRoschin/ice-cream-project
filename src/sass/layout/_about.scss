@@ -6,9 +6,11 @@
         background-position: center;
         background-position: 0 236px;
         background-image: url(../images/about/bg-about_lg.png);
+        background-image: -webkit-image-set(url(../images/about/bg-about_lg.webp) 1x);
 
         @include mq(retina){
             background-image: url(../images/about/bg-about_lg@2x.png);
+            background-image: -webkit-image-set(url(../images/about/bg-about_lg@2x.webp) 2x)
         }
     }
 
@@ -136,7 +138,7 @@
     }
 
     &__icon {
-        fill: transparent;
+        fill: var(--btn-accent-cl);
         margin-left: 14px;
     }
 }

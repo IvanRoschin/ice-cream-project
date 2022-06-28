@@ -1,11 +1,22 @@
 /*#region 8	Contacts */
+.container.contacts__сontainer {
+    @include mq(tablet-only) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+}
+
 .contacts {
     background-image:
     linear-gradient(to bottom, #fff 20%, #FFF5F6 20%);
         background-size: 100%, contain;
         background-position: center;
         background-repeat: no-repeat;
-
+        margin-bottom: 32px;
+        @include mq(tablet) {
+            margin-bottom: 60px;
+        }
+        
     &__item {
         background: var(--white-cl);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -17,10 +28,6 @@
         @include mq(tablet) {
             --items: 3;
         }
-    }
-
-    &__item:last-child {
-        margin-bottom: 32px;
     }
 }
 
@@ -130,17 +137,25 @@
 }
 
 .group-buttons {
-    @include centeredFlex(flex);
-    flex-direction: column;
-
-    &__item {
+    text-align: center;
+ 
     @include mq(tablet) {
-            --items: 2;
-        }
+       @include centeredFlex(flex);
     }
 
     &__item:not(:last-child) {
-        margin-bottom: 10px;
+        @include mq(mobile-only) {
+            margin-bottom: 10px;
+    }
+
+        @include mq(tablet) {
+            margin-right: 14px;
+    }
+
+        @include mq(desktop) {
+            margin-right: 12px;
+    }
+
     }
 
     &__icon {
@@ -152,86 +167,5 @@
     }
 
 }
-
-/* Modalka */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    padding: 94px 15px;
-    overflow-y: scroll;
-
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-
-    opacity: 1;
-    transition:
-        opacity var(--transition-duration) var(--transition-timing-function),
-        transform var(--transition-duration) var(--transition-timing-function),
-        visibility var(--transition-duration) var(--transition-timing-function);
-
-    &--is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-}
-
-.modal {
-    position: relative;
-    width: 90%;
-
-    background-color: rgba(0, 0, 0, 0.2);
-
-    transition: transform var(--transition-duration) var(--transition-timing-function);
-
-    @include mq(tablet) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.9);
-        max-width: 450px;
-        width: 100%;
-    }
-
-
-    @include mq(desktop) {
-        max-width: 530px;
-        width: 100%;
-    }
-
-}
-
-.modal-x {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    fill: #000;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-
-    transition: fill var(--transition-duration) var(--transition-timing-function);
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-cl);
-    }
-}
-.map {
-    width: 280px;
-    height: 480px;
-}
-
 
  /*#endregion*/

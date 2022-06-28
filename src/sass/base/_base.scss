@@ -1,32 +1,32 @@
 /*#region base*/
 
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    background-color: var(--white-cl);
-    color: var(--black-cl); 
-    font-family: var(--main-font);
-    @include fonts(700, 12px, 20px, 0.02em);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-  /*#endregion*/
+body {
+  background-color: var(--white-cl);
+  color: var(--black-cl);
+  font-family: var(--main-font);
+  @include fonts(700, 12px, 20px, 0.02em);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*#endregion*/

@@ -1,0 +1,96 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 94px 15px;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition:
+        opacity var(--transition-duration) var(--transition-timing-function),
+        transform var(--transition-duration) var(--transition-timing-function),
+        visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-wrapper {
+    position: relative;
+    width: 90%;
+    border-radius: 2%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+
+    @include mq(tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+        max-width: 450px;
+        width: 100%;
+    }
+
+
+    @include mq(desktop) {
+        max-width: 530px;
+        width: 100%;
+    }
+    
+    
+    &__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: #000;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-cl);
+    }
+
+    cursor: pointer;
+
+    transition: border var(--transition-duration) var(--transition-timing-function);
+}
+
+&__btn:hover,
+&__btn:focus {
+    border: 1px solid var(--accent-cl);
+  }
+}
+
+/* початковий стан елемента перед анімацією */
+.backdrop.is-hidden .modal-wrapper {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+}
+
+/* кінцевий стан елемента після анімації */
+.backdrop-contact .modal-wrapper {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

@@ -1,5 +1,5 @@
 <section class="section contacts">
-<div class="container">
+<div class="container contacts__сontainer">
   <h2 class="section-title visually-hidden">Contacts</h2>
   <ul class="contacts list grid">
 
@@ -89,32 +89,32 @@
     </li>
 
   </ul>
-  <ul class="group-buttons list grid">
-    <li class="group-buttons__item grid-item">
-      <button class="group-buttons__btn btn btn--mode-dark" type="button" data-modal-open>
+  <ul class="group-buttons list">
+    <li class="group-buttons__item">
+      <button class="group-buttons__btn btn btn--mode-dark" type="button" data-modal-contact-open>
             Our Locations
       <svg class="group-buttons__icon" aria-label="narrow-right" width="6" height="10">
       <use href="./images/sprite.svg#narrow-right-white"></use></svg>
     </button>
-   <!-- map -->
-           <div class="backdrop backdrop--is-hidden" data-modal>
-             <div class="modal">
-              <button class="modal-x" type="button" data-modal-close>
-                 <svg class="modal-x__icon" aria-label="Закрыть окно" width="18" height="18">
+   <!-- modal-window -->
+           <div class="backdrop is-hidden" data-modal-contact>
+             <div class="modal-wrapper">
+              <button class="modal-wrapper__btn" type="button" data-modal-contact-close>
+                 <svg class="modal-wrapper__icon" aria-label="Закрыть окно" width="18" height="18">
                   <use href="./images/sprite.svg#icon-close"></use>
                 </svg> 
               </button>
-<iframe class="map" src="https://www.google.com/maps/d/u/1/embed?mid=13O-3F8U9n9tJTXelBbtKiERw7deD1To&ehbc=2E312F" width="640"
+<iframe class="map" src="https://www.google.com/maps/d/u/1/embed?mid=13O-3F8U9n9tJTXelBbtKiERw7deD1To&ehbc=2E312F" width="280"
   height="480"></iframe>
             </div>
           </div> 
   </li>
     <!-- franchise-agreement -->
 
-    <li class="group-buttons__item grid-item">
+    <li class="group-buttons__item">
       <button class="group-buttons__btn btn btn--mode-light" type="button" data-modal-open>
         <a class="group-buttons__link link" href="./documents/sample-franchise-agreement.pdf" target="_blank">Franchise</a>
-      <svg class="group-buttons__icon" aria-label="narrow-right" width="6" height="10">
+      <svg class="narrow" aria-label="narrow-right" width="10" height="12">
         <use href="./images/sprite.svg#narrow-right-red"></use>
       </svg>
       </button></li>
