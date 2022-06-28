@@ -4,10 +4,15 @@
     <h2 class="section-title product__title">products</h2>
     <ul class="list products__list">
       <li class="item products__item">
-        <div class="window-product" id="window-product">
+        <!--
+        <div class="window-product is-hidden" data-product>
           <div class="window-product--box">
             <h3 class="window-product--name">ice cream</h3>
-            <button class="window-product--btn">
+            <button
+              class="window-product--btn"
+              type="button"
+              data-product-close
+            >
               <svg class="window-product--svg" width="10" height="10">
                 <use href="./images/sprite.svg#icon-arrow-left"></use>
               </svg>
@@ -26,7 +31,7 @@
             is solid at very low temperatures (below 2 °C or 35 °F). It becomes
             more malleable as its temperature increases.
           </p>
-        </div>
+        </div>-->
         <div id="ice-cream" class="products__item--box products__item--cream">
           <h3 class="product-name">ice cream</h3>
 
@@ -34,11 +39,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a
-            class="product-btn"
-            aria-expanded="false"
-            aria-controls="window-product"
-            href="#ice-cream"
+          <a class="product-btn" data-product-open
             ><svg class="product-btn__icons" width="10" height="10">
               <use href="./images/sprite.svg#icon-arrow-right"></use></svg
           ></a>
@@ -51,7 +52,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a class="product-btn" href=""
+          <a class="product-btn product-btn--coffee" href=""
             ><svg class="product-btn__icons" width="10" height="10">
               <use href="./images/sprite.svg#icon-arrow-right"></use></svg
           ></a>
@@ -64,7 +65,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a class="product-btn" href=""
+          <a class="product-btn product-btn--milkshakes" href=""
             ><svg class="product-btn__icons" width="10" height="10">
               <use href="./images/sprite.svg#icon-arrow-right"></use></svg
           ></a>
