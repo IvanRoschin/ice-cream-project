@@ -3,11 +3,6 @@
 @include mq(desktop){
     padding: 60px 0;
 }
-@include mq(tablet) {
-    padding: 60px 0;
-}
-
-
 
     background-image: linear-gradient(to top, #fff 78%, #fff5f6 78%);
     background-size: 100%, contain;
