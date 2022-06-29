@@ -1,77 +1,82 @@
 .header {
-    width: 100vw;
-    padding-top: 8px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
- 
-    @include mq(desktop) {
-        padding-top: 17px;
-        padding-bottom: 17px;  
-    }   
-}   
+  width: 100vw;
+  padding-top: 8px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  min-height: 80px;
+}
 
 .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mq(mobile-gummy) {
+    width: 100%;
+  }
+
+  @include mq(mobile-fixed) {
+    width: 480px;
+  }
 }
 
 .site-nav {
-    @include mq(not-desktop) {
-        display: none;
-    }
+  @include mq(not-desktop) {
+    display: none;
+  }
 
-    &__list {
-        display: flex;
-        gap: 35px;        
-    }
+  &__list {
+    display: flex;
+    gap: 35px;
+  }
 
-    &__item {
-        @include fonts(700, 16px, 21px, 0.04em);
-        color: var(--white-cl);
-    }
+  &__item {
+    @include fonts(700, 16px, 21px, 0.04em);
+    color: var(--white-cl);
+  }
 
-    &__link {
-        @include mq(tablet) {
-         padding-top: 16px;
-         padding-bottom: 16px;
-      }
+  &__link {
+    @include mq(tablet) {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
+  }
 }
 
 .menu-button {
-    padding: 0px;
-    cursor: pointer;
+  padding: 0px;
+  cursor: pointer;
 
-    border: transparent;
-    background-color: transparent;
-    transition: color var(--transition-duration) var(--transition-timing-function);
+  border: transparent;
+  background-color: transparent;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 
-    &:hover,
-    &:focus {
-        color: #ffffff;
-    }
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
 
-    @include mq(desktop) {
-        display: none;
-    }
+  @include mq(desktop) {
+    display: none;
+  }
 }
 
 .burger__btn {
-    color: var(--accent-cl);
-
-    
+  color: var(--accent-cl);
 }
 
 .burger {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .block-menu {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 32px;
+
+  @include mq(not-desktop) {
+    margin-left: auto;
+  }
 }

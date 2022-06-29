@@ -137,14 +137,29 @@
   }
 }
 
+.footer__phone-number {
+  color: var(--accent-cl); 
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--pink-cl);
+  }
+}
+
 .footer__phone {
   text-decoration: none;
   display: block;
   @include fonts(700, 12px, 21px, 0.04em);
-
+  color: var(--accent-cl);
   text-align: right;
 
-  color: var(--accent-cl);
+  transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: #907e82;
+  }
 
   @include mq(tablet) {
     font-size: 14px;
@@ -165,6 +180,7 @@
   @include mq(mobile-only) {
     text-align: center;
     padding-top: 16px;
+    padding-bottom: 3px;
   }
 
   @include mq(tablet) {
@@ -172,6 +188,15 @@
     align-items: center;
     justify-content: center;
     padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 4px;
   }
 }
 .footer__safety {

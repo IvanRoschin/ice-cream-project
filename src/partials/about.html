@@ -1,5 +1,5 @@
 <section class="about section" id="how">
-  <div class="container">
+  <div class="container about__container">
     <p class="section-label about__label">Tradition and love</p>
     <h2 class="section-title about__title">How it’s made?</h2>
 
@@ -91,12 +91,58 @@
           </li>
         </ul>
 
-        <button class="about__btn btn btn--mode-light" type="button">
+        <button class="about__btn btn btn--mode-light" type="button" data-modal-about-open>
           Read more
           <svg class="about__icon" width="7" height="14">
             <use href="./images/sprite.svg#narrow-right-red"></use>
           </svg>
         </button>
+        <div class="backdrop is-hidden" data-modal-about>
+
+          <!-- Модальне вiкно секцiї about -->
+          <div class="modal-about">
+            <button class="modal-wrapper__btn" type="button" data-modal-about-close>
+              <svg class="modal-wrapper__icon" aria-label="Закрыть окно" width="18" height="18">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <strong class="section-label modal-about__title">How it’s made?</strong>
+                <p class="modal-about__text">Commercial ice cream is made with six steps:
+                
+                Milk, cream, milk solids, sugars, modifying agents and flavourings are blended together in stainless steel vats.
+                The mix is homogenised to create a consistent texture.
+                The mix is pasteurised by heating at 82-85°C for 15 seconds then cooled to destroy bacteria.
+                The mix is left alone for 2-24 hours so fat globules solidify and viscosity increases. Flavours or colourings are added.
+                The mix is frozen (at about -7°C) and beaten (or ‘agitated’). This adds air to the mix.
+                
+
+                </p> 
+                <div class="modal-about__bottom">
+
+                  <div class="modal-about__bottom-text">
+                    <p>
+                      The ice cream is moulded, packaged and frozen at around -25°C to allow it to harden.
+                    </p>
+                  </div>
+
+                  <div class="modal-about__bottom-thumb">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="
+                                ../src/images/hero-img/milk_lg.png    1x,
+                                ../src/images/hero-img/milk_lg@2x.png 2x
+                              " type="image/png" />
+                      <source media="(min-width: 768px)" srcset="
+                                ../src/images/hero-img/milk_md.png    1x,
+                                ../src/images/hero-img/milk_md@2x.png 2x
+                              " type="image/png" />
+                      <img class="modal-about__bottom-thumb img" src="../src/images/hero-img/milk_md.png" alt="jar with a milk" loading="lazy" />
+                    </picture>
+                  </div>
+
+                </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
