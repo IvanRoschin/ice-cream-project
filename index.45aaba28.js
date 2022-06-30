@@ -1,2 +1,0 @@
-!function(){var e={openmobMenuBtn:document.querySelector("[buyNow-mobile-open]"),closemobMenuBtn:document.querySelector("[buyNow-mobile-close]"),buyNowMobile:document.querySelector("[data-modal]")};function o(){document.body.classList.toggle("buyNow-Mobile-open"),e.buyNowMobile.classList.toggle("is-hidden")}e.openmobMenuBtn.addEventListener("click",o),e.closemobMenuBtn.addEventListener("click",o)}();
-//# sourceMappingURL=index.45aaba28.js.map
