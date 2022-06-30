@@ -1,26 +1,18 @@
 /*#region 6 Gallery*/
 .gallery {
 
-@include mq(desktop){
-    padding: 60px 0;
+        @include mq(desktop){
+        padding: 60px 0;
+        }
+
+         background-image: linear-gradient (to top, #fff 78%, #fff5f6 78%);
+         background-size: 100%,
+         contain;
+         background-position: center;
+         background-repeat: no-repeat;
 }
 
-    @include mq(mobile-only) {
-        padding-bottom: 60px;
-    }
-   
-    @include mq(tablet) {
-        padding-bottom: 60px;
-    }
-}
 
-.gallery{
-    
-    background-image: linear-gradient(to top, #fff 78%, #fff5f6 78%);
-    background-size: 100%, contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .gallery--list {
     padding: 0;
@@ -51,7 +43,9 @@
 }
 
 .gallery--item {
-
+    
+    transition: 0.5s;
+   
     @include mq(mobile-only) {
         display: flex;
         align-self: center;
@@ -122,14 +116,11 @@
 
 .gallery--item:hover{
     transform: scale(1.1);
-    transition: 0.5s;
-    -webkit-transform: rotate(15deg);
-        /* Градусы поворота можно изменить по необходимости */
-        transform: rotate(15deg);
-        /* Градусы поворота можно изменить по необходимости */
+   
 }
 
 .gallery--item__flex, .gallery--item__flexmobile{
+    padding: 0;
 @include mq(mobile-only){
     display: flex;
     justify-content: center;
@@ -138,11 +129,7 @@
 }
 
 .gallery--img,.gallery--img__large{
-    display: block;
-    -webkit-transition: all 1s ease;
-        transition: all 1s ease;
-
-        
+    display: block;  
 }
 
 .gallery--img{
