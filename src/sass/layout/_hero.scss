@@ -119,7 +119,6 @@
   display: block;
   border-radius: 20px;
   border: none;
-  background-color: var(--accent-cl);
   font-family: var(--main-font);
   font-size: 8px;
   font-weight: 400;
@@ -129,6 +128,9 @@
 
   &--dark-mode {
     color: var(--white-cl);
+    background-color: var(--accent-cl);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
 
     @include mq(desktop) {
       padding: 11px 24px;
@@ -146,6 +148,11 @@
     }
   }
 
+  &--dark-mode:hover,
+  &--dark-mode:focus {
+    background-color: #b6133c;
+  }
+
   &--light-mode:hover,
   &--light-mode:focus {
     background-color: #ecebeb;
@@ -155,7 +162,6 @@
     font-size: 14px;
     line-height: 1.286;
     font-weight: 400;
-    // padding: 11px 24px;
   }
 }
 

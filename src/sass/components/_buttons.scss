@@ -1,36 +1,34 @@
 /* Стили кнопки */
 
 .btn {
-    @include fonts(700, 16px, 21px, 0.04em);
-    min-width: 167px;
-    padding: 10px;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
+  @include fonts(700, 16px, 21px, 0.04em);
+  min-width: 167px;
+  padding: 10px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
 
-    &--mode-light {
-      color: var(--btn-accent-cl);
-      background-color: var(--white-cl);
-      transition:
-          background-color var(--transition-duration) var(--transition-timing-function);
+  &--mode-light {
+    color: var(--btn-accent-cl);
+    background-color: var(--white-cl);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
 
-      &:hover,
-      &:focus {
-        background-color: #ECEBEB;
-      }
-    }
-    
-    &--mode-dark {
-      color: var(--white-cl);
-      background-color: var(--btn-accent-cl);
-      transition:
-          background-color var(--transition-duration) var(--transition-timing-function);
-
-      &:hover,
-      &:focus {
-            background-color: var(--btn-accent-cl);
-      }
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
     }
   }
 
-  
+  &--mode-dark {
+    color: var(--white-cl);
+    background-color: var(--btn-accent-cl);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: #b6133c;
+    }
+  }
+}

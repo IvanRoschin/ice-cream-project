@@ -1,9 +1,21 @@
 /*#region 6 Gallery*/
 .gallery {
+
 @include mq(desktop){
     padding: 60px 0;
 }
 
+    @include mq(mobile-only) {
+        padding-bottom: 60px;
+    }
+   
+    @include mq(tablet) {
+        padding-bottom: 60px;
+    }
+}
+
+.gallery{
+    
     background-image: linear-gradient(to top, #fff 78%, #fff5f6 78%);
     background-size: 100%, contain;
     background-position: center;

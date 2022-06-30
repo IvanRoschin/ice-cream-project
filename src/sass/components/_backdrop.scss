@@ -50,38 +50,34 @@
     
     &__btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 15px;
+    right: 15px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    fill: #000;
+    fill: var(--accent-cl);
     width: 30px;
     height: 30px;
     background-color: white;
+    border: none;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    transition: fill var(--transition-duration) var(--transition-timing-function);
+    transition: fill var(--transition-duration) var(--transition-timing-function),
+                background-color var(--transition-duration) var(--transition-timing-function);
+                
 
     &:hover,
     &:focus {
-        fill: var(--accent-cl);
+        fill: var(--white-cl);
+        background-color: var(--pink-cl);
     }
-
-    cursor: pointer;
-
-    transition: border var(--transition-duration) var(--transition-timing-function);
-}
-
-&__btn:hover,
-&__btn:focus {
-    border: 1px solid var(--accent-cl);
   }
-}
+} 
+
+
 
 /* початковий стан елемента перед анімацією */
 .backdrop.is-hidden .modal-wrapper {
