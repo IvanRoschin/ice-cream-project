@@ -1,18 +1,18 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buyNow-mobMenu-open]'),
+    openmobMenuBtn: document.querySelector('[buyNow-mobMenu-open]'),
 
-    closeModalBtn: document.querySelector('[buyNow-mobMenu-close]'),
+    closemobMenuBtn: document.querySelector('[buyNow-mobMenu-close]'),
 
     buyNowMobMenu: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openmobMenuBtn.addEventListener('click', toggleModal);
+  refs.closemobMenuBtn.addEventListener('click', toggleModal);
 
  
   function toggleModal() {
+    document.body.classList.toggle("mobMenu-open");
     refs.buyNowMobMenu.classList.toggle('is-hidden');
-
   }
 })();

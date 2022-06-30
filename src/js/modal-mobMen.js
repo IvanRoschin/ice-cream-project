@@ -10,7 +10,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    // document.body.classList.toggle("modal_mobMen-open");
+    document.body.classList.toggle("modal_mobMen-open");
     refs.modal.classList.toggle("is-hidden");
     refs.modal_mobMen.classList.toggle("is-hidden");
   }

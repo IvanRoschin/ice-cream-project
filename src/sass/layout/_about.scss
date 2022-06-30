@@ -192,11 +192,26 @@
         display: inline-block;
         margin-bottom: 20px;
     
-        color: var(--accent-cl); 
+        color: var(--accent-cl);
+        
+        @include mq(tablet) {
+            @include fonts(400, 26px, 30px, 0.04em, uppercase);
+        }
+        
+        @include mq(desktop) {
+            @include fonts(400, 30px, 34px, 0.04em, uppercase);
+        }
     }
 
     &__text{
         @include fonts(500, 12px, 20px, 0.04em);
+        @include mq(tablet){
+            @include fonts(500, 14px, 24px, 0.04em);
+        }
+                @include mq(desktop) {
+                    @include fonts(500, 16px, 28px, 0.04em);
+                }
+        
     }
 
     &__bottom{
@@ -208,8 +223,15 @@
     }
 
     &__bottom-text{
-        width: 100%
+        @include fonts(500, 12px, 20px, 0.04em);
+        
+            @include mq(tablet) {
+                @include fonts(500, 14px, 24px, 0.04em);
+            }
 
+                        @include mq(desktop) {
+                            @include fonts(500, 16px, 28px, 0.04em);
+                        }
     }
 
     &__bottom-thumb{
@@ -226,7 +248,7 @@
 }
 
 &__bottom-img {
-    animation: bounce-in-left 1.1s both;
+    animation: bounce-in-right 1.1s both;
 
     @include mq(tablet) {
         width: 152px;
@@ -240,7 +262,7 @@
 }
 
 //  * ----------------------------------------
-//  * animation bounce-in-left
+//  * animation bounce-in-right
 //  * ----------------------------------------
 
 @keyframes bounce-in-right {
@@ -286,5 +308,4 @@
         animation-timing-function: ease-out;
     }
 }
-
 }
