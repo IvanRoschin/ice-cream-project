@@ -1,2 +1,0 @@
-(()=>{const e={openmobMenuBtn:document.querySelector("[buyNow-mobMenu-open]"),closemobMenuBtn:document.querySelector("[buyNow-mobMenu-close]"),buyNowMobMenu:document.querySelector("[data-modal]")};function o(){document.body.classList.toggle("mobMenu-open"),e.buyNowMobMenu.classList.toggle("is-hidden")}e.openmobMenuBtn.addEventListener("click",o),e.closemobMenuBtn.addEventListener("click",o)})();
-//# sourceMappingURL=index.ae2e34fd.js.map
